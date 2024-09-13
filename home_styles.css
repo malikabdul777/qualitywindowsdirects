@@ -497,6 +497,17 @@ button.ctaLink:hover {
     width: 100%;
   }
 }
+.privacyPolicySection {
+  width: 50%;
+  margin-inline: auto;
+  margin-bottom: 30px;
+}
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 
 /* For small screens (e.g., mobile devices) */
 @media (max-width: 480px) {
