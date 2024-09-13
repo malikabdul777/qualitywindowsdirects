@@ -23,13 +23,16 @@ body {
 }
 
 .logo {
-  width: 100px;
+  width: auto;
+  height: auto;
 }
-.logoText {
-  font-weight: 700;
-  font-size: 24px;
+.logo_header {
+  width: 200px;
 }
 
+.heroBanner {
+  width: 100%;
+}
 .navLinks {
   display: flex;
   gap: 90px;
@@ -40,7 +43,7 @@ body {
 
     a {
       text-decoration: none;
-      color: #000;
+      color: #1d2d60;
       font-weight: 600;
     }
   }
@@ -73,7 +76,7 @@ body {
 
   li {
     a {
-      color: #000;
+      color: #1d2d60;
       text-decoration: none;
       font-size: 18px;
       font-weight: 500;
@@ -118,7 +121,7 @@ body {
 .ctaLink {
   padding: 10px 20px;
   border-radius: 5px;
-  background-color: #000;
+  background-color: #1d2d60;
   color: white;
   cursor: pointer;
   text-decoration: none;
@@ -208,7 +211,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    color: #000;
+    color: #1d2d60;
     font-weight: 600;
   }
 }
@@ -300,12 +303,12 @@ select {
 
 input:focus,
 select:focus {
-  border-color: #000000;
+  border-color: #1d2d60;
   outline: none;
 }
 
 button.ctaLink {
-  background-color: #000000;
+  background-color: #1d2d60;
   color: white;
   padding: 0.8rem;
   font-size: 1.1rem;
@@ -316,7 +319,7 @@ button.ctaLink {
 }
 
 button.ctaLink:hover {
-  background-color: #000000;
+  background-color: #1d2d60;
 }
 
 /* Popup styles */
@@ -352,7 +355,7 @@ button.ctaLink:hover {
   right: 20px;
   font-size: 40px;
   cursor: pointer;
-  color: #000000;
+  color: #1d2d60;
 }
 
 .close-btn:hover {
@@ -377,8 +380,9 @@ button.ctaLink:hover {
     padding: 30px;
   }
 
-  .logo {
-    width: 150px;
+  .logo_header {
+    width: 200px;
+    margin-bottom: 20px;
   }
 
   .navLinks {
@@ -421,6 +425,14 @@ button.ctaLink:hover {
   .footerLogo {
     width: 140px;
   }
+
+  .topNotification {
+    font-size: 14px;
+  }
+
+  .heroBanner {
+    width: 100%;
+  }
 }
 
 /* For desktops and up */
@@ -429,9 +441,9 @@ button.ctaLink:hover {
     padding: 40px;
   }
 
-  .logo {
-    width: 120px;
-    margin-bottom: 40px;
+  .logo_header {
+    width: 200px;
+    margin-bottom: 20px;
   }
 
   .navLinks {
@@ -474,6 +486,12 @@ button.ctaLink:hover {
   .footerLogo {
     width: 250px;
   }
+  .topNotification {
+    font-size: 14px;
+  }
+  .heroBanner {
+    width: 100%;
+  }
 }
 
 /* For small screens (e.g., mobile devices) */
@@ -483,9 +501,9 @@ button.ctaLink:hover {
     flex-direction: column;
   }
 
-  .logo {
-    width: 100px;
-    margin-bottom: 30px;
+  .logo_header {
+    width: 200px;
+    margin-bottom: 20px;
   }
 
   .navLinks {
@@ -529,5 +547,11 @@ button.ctaLink:hover {
 
   .footerLogo {
     width: 120px;
+  }
+  .topNotification {
+    font-size: 14px;
+  }
+  .heroBanner {
+    width: 120%;
   }
 }
