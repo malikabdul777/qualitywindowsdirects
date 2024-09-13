@@ -104,7 +104,10 @@ body {
 
 .footerCopyright {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 .footerWithBackground {
@@ -354,6 +357,15 @@ button.ctaLink:hover {
 
 .close-btn:hover {
   color: #333;
+}
+
+.topNotification {
+  background-color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 15px 20px;
 }
 
 /* Media Queries */
