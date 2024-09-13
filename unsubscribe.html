@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/logo_new.jpg" />
+    <title>Unsubscribe Successful</title>
+
+    <link rel="stylesheet" href="./home_styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="topNotification">
+        <p>
+          Quality Windows Directs is not affiliated with any government grant or
+          free window programs, all projects come at a cost to the consumer
+        </p>
+      </div>
+      <nav class="nav">
+        <div><img src="./logo_new.jpg" alt="" class="logo_header" /></div>
+        <div>
+          <a href="tel:+1 548-255-0105" class="ctaLink"
+            >Call Us: + 548-255-0105</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="heroSection">
+        <h2>Unsubscribe Successful</h2>
+        <p>
+          The email <strong id="userEmail"></strong> has been successfully
+          removed from our mailing list.
+        </p>
+        <p>
+          We're sorry to see you go. If you change your mind, feel free to
+          re-subscribe anytime!
+        </p>
+        <a href="index.html" class="ctaLink returnHomeCTA"
+          >Return to Home Page</a
+        >
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footerContent">
+        <div class="footerLogoContainer">
+          <img src="./footer_warr.webp" alt="" class="footerLogo" />
+        </div>
+      </div>
+      <div class="footerCopyrightContainer">
+        <div class="divider"></div>
+        <div class="footerCopyright">
+          <p>© Quality Windows Directs - 2024</p>
+
+          <p>2967 Dundas St. W. #452B Toronto, ON M6P 1Z2</p>
+          <p>Phone: +1 548-255-0105</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Function to get email from URL query parameters
+      function getEmailFromQuery() {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get("email") || "";
+      }
+
+      // Display the email in the unsubscribe success message
+      document.getElementById("userEmail").textContent = getEmailFromQuery();
+    </script>
+  </body>
+</html>
