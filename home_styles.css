@@ -29,7 +29,10 @@ body {
 .logo_header {
   width: 200px;
 }
-
+.heroBannerContainer {
+  width: 100%;
+  overflow-x: hidden;
+}
 .heroBanner {
   width: 100%;
 }
